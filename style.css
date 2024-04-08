@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+  }
+  
+  .grid-item {
+    border: solid;
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    column-gap: 20px;
+  }
+  .img{
+    width: 100%;
+    height: 100%;
+    padding: 0%;
+  }
+
+
+  @media screen and (max-width: 768px) {
+    .grid-container {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+  }
